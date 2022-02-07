@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+/*Global*/
+
+.pageContainer {
+	padding-top: 35px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*MainContainer Styles*/
+
+.mainContainerPage {
+	text-align: center;
+	display: flex;
+	padding: 25px 0px;
+	justify-content: center;
+	font-size: 22px;
+	font-weight: 550;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.canvasContainer {
+	position: relative;
+	width: 600px;
+	height: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.canvasInput{
+  position: absolute; 
+  left: -99999px;
+}
+
+/*Timer Styles*/
+
+.TimerDisplay {
+	width: fit-content;
+	margin: auto;
+}
+
+/*Main Container Styles*/
+
+.textContainer {
+	width: 100%;
+	height: 270px;
+	border: 3px solid black;
+	border-radius: 8px;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	text-align: start;
+	padding: 5px;
+}
+
+.redText {
+	color: red;
+}
+
+.blueText {
+	color: blue;
+}
+
+.textLine {
+	height: 35px;
+}
+
+.typingLine {
+	height: 35px;
+	border-bottom: 2px solid black;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+}
+
+/* ParameterSelection Styles */
+
+.formRow {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: 10px 0px;
+}
+
+.formInput {
+	width: 35%;
+	font-size: 18px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.submitButton {
+	background-color: lightblue;
+	border: none;
+	border-radius: 10px;
+	font-size: 22px;
+	font-weight: 550;
+	color: rgb(0, 69, 78);
+}
+
+@media only screen and (max-width: 780px) {
+	.formInput {
+		width: 75%;
+		font-size: 18px;
+		padding: 10px;
+		cursor: pointer;
+	}
+}
+
+/*Results Styles*/
+
+.ScoreHeader{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+
+.ScoreResultsContainer{
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 35px;
+}
+
+.ScoreResultsColumn{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ScoreResultDisplay{
+  text-align: center;
 }
